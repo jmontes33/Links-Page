@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url('fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 12vw;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links-container .tiktok, .youtube, .equipo, .linkedin {
+    display: flex;
+    align-items: center;
+    background-color: #9EF8EE;
+    width: 30vw;
+    height: 3vw;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.links-container .tiktok:hover, .youtube:hover, .equipo:hover, .linkedin:hover {
+    background-color: #22BABB;
+}
+
+.links-container p {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.icono img {
+    width: 3vw;
+    margin-left: 10px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
